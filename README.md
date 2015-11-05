@@ -9,13 +9,20 @@ It will continually output Byte arrays of size n.
 mvn package
 
 ## Run
+```
 mvn scala:run -DmainClass=ie.eoin.sample.devrandom.App -DaddArgs="javasecure|10"
+```
 OR
+```
 java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar javasecure 10
+```
 
 ## Flags
+
 java -> Java's default PRNG. This is a linear congruential pseudorandom number generator, as defined by D. H. Lehmer and described by Donald E. Knuth in The Art of Computer Programming, Volume 3: Seminumerical Algorithms, section 3.2.1
+
 javasecure -> The SHA1PRNG provided by the SUN CSP.
+
 simple -> The PRNG I wrote, very simple
 
 
