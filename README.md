@@ -39,47 +39,48 @@ Brew install ent
 #### Java
 java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar java 100 | od -An -N1000 | ent 
 ```
-Entropy = 2.684033 bits per byte.
+Entropy = 2.922519 bits per byte.
 
 Optimum compression would reduce the size
-of this 4663 byte file by 66 percent.
+of this 4663 byte file by 63 percent.
 
-Chi square distribution for 4663 samples is 239781.86, and randomly
+Chi square distribution for 4663 samples is 202232.49, and randomly
 would exceed this value less than 0.01 percent of the times.
 
-Arithmetic mean value of data bytes is 43.5580 (127.5 = random).
+Arithmetic mean value of data bytes is 43.9385 (127.5 = random).
 Monte Carlo value for Pi is 4.000000000 (error 27.32 percent).
-Serial correlation coefficient is 0.496299 (totally uncorrelated = 0.0).
+Serial correlation coefficient is 0.499019 (totally uncorrelated = 0.0).
 ```
 
 #### Java Secure
 java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar javasecure 100 | od -An -N1000 | ent 
 ```
-Entropy = 2.685902 bits per byte.
+
+Entropy = 2.923670 bits per byte.
 
 Optimum compression would reduce the size
-of this 4663 byte file by 66 percent.
+of this 4663 byte file by 63 percent.
 
-Chi square distribution for 4663 samples is 239541.07, and randomly
+Chi square distribution for 4663 samples is 202012.01, and randomly
 would exceed this value less than 0.01 percent of the times.
 
-Arithmetic mean value of data bytes is 43.5623 (127.5 = random).
+Arithmetic mean value of data bytes is 43.9743 (127.5 = random).
 Monte Carlo value for Pi is 4.000000000 (error 27.32 percent).
-Serial correlation coefficient is 0.502681 (totally uncorrelated = 0.0).
+Serial correlation coefficient is 0.496561 (totally uncorrelated = 0.0).
 ```
 
 #### Simple
 java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar simple 100 | od -An -N1000 | ent
 ```
-Entropy = 2.683670 bits per byte.
+Entropy = 2.921316 bits per byte.
 
 Optimum compression would reduce the size
-of this 4663 byte file by 66 percent.
+of this 4663 byte file by 63 percent.
 
-Chi square distribution for 4663 samples is 240474.60, and randomly
+Chi square distribution for 4663 samples is 202419.92, and randomly
 would exceed this value less than 0.01 percent of the times.
 
-Arithmetic mean value of data bytes is 43.5447 (127.5 = random).
+Arithmetic mean value of data bytes is 43.9374 (127.5 = random).
 Monte Carlo value for Pi is 4.000000000 (error 27.32 percent).
-Serial correlation coefficient is 0.493548 (totally uncorrelated = 0.0).
+Serial correlation coefficient is 0.495605 (totally uncorrelated = 0.0).
 ```
