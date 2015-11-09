@@ -23,7 +23,7 @@ object App {
     }
 
     while(true) {
-      //Uncommnent the below line to see a human readable array of random numbers
+      //Uncomment the below line to see a human readable array of random numbers
       //println(Arrays.toString(generator.moreBytes))
       System.out.write(generator.moreBytes, 0, arraySize)
     }
