@@ -1,10 +1,11 @@
 # Random Data Generator
 This project uses a number of different generators to output random Byte array data.
 
-It will continually output Byte arrays of size n.
 
 # Package
+```
 mvn package
+```
 
 # Run
 ```
@@ -15,13 +16,13 @@ OR
 java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar javasecure 10
 ```
 
-## Flags
+This will continually output Byte arrays of size n.
 
-java -> Java's default PRNG. This is a linear congruential pseudorandom number generator, as defined by D. H. Lehmer and described by Donald E. Knuth in The Art of Computer Programming, Volume 3: Seminumerical Algorithms, section 3.2.1
+The following flags will use the different generators.
 
-javasecure -> The SHA1PRNG provided by the SUN CSP.
-
-simple -> The PRNG I wrote, very simple
+* java -> Java's default PRNG. This is a linear congruential pseudorandom number generator, as defined by D. H. Lehmer and described by Donald E. Knuth in The Art of Computer Programming, Volume 3: Seminumerical Algorithms, section 3.2.1
+* javasecure -> The SHA1PRNG provided by the SUN CSP.
+* simple -> The PRNG I wrote, very simple
 
 
 # Test
@@ -35,7 +36,9 @@ Brew install ent
 ## Run tests
 
 ### Java
-java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar java 100 | od -An -N1000 | ent 
+```
+java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar java 100 | od -An -N1000 | ent
+```
 ```
 Entropy = 2.922519 bits per byte.
 
@@ -51,7 +54,9 @@ Serial correlation coefficient is 0.499019 (totally uncorrelated = 0.0).
 ```
 
 ### Java Secure
+```
 java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar javasecure 100 | od -An -N1000 | ent 
+```
 ```
 
 Entropy = 2.923670 bits per byte.
@@ -68,7 +73,9 @@ Serial correlation coefficient is 0.496561 (totally uncorrelated = 0.0).
 ```
 
 ### Simple
+```
 java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar simple 100 | od -An -N1000 | ent
+```
 ```
 Entropy = 2.921316 bits per byte.
 
