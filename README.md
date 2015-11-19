@@ -26,7 +26,7 @@ The following flags will use the different generators.
 
 
 # Test
-Use the (ent command line tools)[http://www.fourmilab.ch/random/] to test the different generators.
+Use the [ent command line tools](http://www.fourmilab.ch/random/) to test the different generators.
 
 ## Install ent
 ```
