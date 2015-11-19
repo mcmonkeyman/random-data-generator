@@ -1,14 +1,12 @@
 # Random Data Generator
-
-## Description
 This project uses a number of different generators to output random Byte array data.
 
 It will continually output Byte arrays of size n.
 
-## Package
+# Package
 mvn package
 
-## Run
+# Run
 ```
 mvn scala:run -DmainClass=ie.eoin.sample.devrandom.App -DaddArgs="javasecure|10"
 ```
@@ -26,17 +24,17 @@ javasecure -> The SHA1PRNG provided by the SUN CSP.
 simple -> The PRNG I wrote, very simple
 
 
-## Test
+# Test
 
-### Install ent
+## Install ent
 http://www.fourmilab.ch/random/
 ```
 Brew install ent
 ```
 
-### Run tests
+## Run tests
 
-#### Java
+### Java
 java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar java 100 | od -An -N1000 | ent 
 ```
 Entropy = 2.922519 bits per byte.
@@ -52,7 +50,7 @@ Monte Carlo value for Pi is 4.000000000 (error 27.32 percent).
 Serial correlation coefficient is 0.499019 (totally uncorrelated = 0.0).
 ```
 
-#### Java Secure
+### Java Secure
 java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar javasecure 100 | od -An -N1000 | ent 
 ```
 
@@ -69,7 +67,7 @@ Monte Carlo value for Pi is 4.000000000 (error 27.32 percent).
 Serial correlation coefficient is 0.496561 (totally uncorrelated = 0.0).
 ```
 
-#### Simple
+### Simple
 java -jar ./target/dev-random-1.0-SNAPSHOT-jar-with-dependencies.jar simple 100 | od -An -N1000 | ent
 ```
 Entropy = 2.921316 bits per byte.
